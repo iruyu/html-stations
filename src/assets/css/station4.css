@@ -18,4 +18,17 @@
     color: #282828;
     font-size: 12px;
   }
-  
+body {
+    background-color:#C4C4C4}
+
+header {
+  background-color: #ffffff;
+  width: 250px;
+  height: 200px;
+}
+
+footer {
+    background-color:#ffffff;
+    width:100px;
+    height:150px;
+}
