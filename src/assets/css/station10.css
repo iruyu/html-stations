@@ -1,0 +1,68 @@
+.card {
+    background-color: #ffffff;
+    padding: 16px; 
+  }
+  
+  .card__img-top {
+    width: 288px;
+    height: 182px;
+    margin-bottom: 8px;
+  }
+  
+  .card__title {
+    color: #000000;
+    font-size: 14px;
+  }
+  
+  .card__description {
+    color: #282828;
+    font-size: 12px;
+  }
+  .parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+    background-color:#C4C4C4}
+
+header {
+  background-color: #ffffff;
+  width: 250px;
+  height: 200px;
+}
+
+footer {
+    background-color:#ffffff;
+    width:100px;
+    height:150px;
+}
+
+/* 1200px以上（PC向け）：デフォルトのstation9.htmlのスタイルを適用 */
+@media screen and (min-width: 1200px) {
+    /* 特に変更なし（station9.html のデフォルトのスタイルを使用） */
+  }
+  
+  /* 768px以上1200px未満（タブレット向け）：タイトルと説明の文字を小さくする */
+  @media screen and (max-width: 1199px) and (min-width: 768px) {
+    .card__title {
+      font-size: 12px;  /* タイトルを小さく */
+    }
+  
+    .card__description {
+      font-size: 10px;  /* 説明を小さく */
+    }
+  }
+  
+  /* 320px以上768px未満（スマートフォン向け）：タイトルの文字を小さくし、説明を非表示にする */
+  @media screen and (max-width: 767px) {
+    .card__title {
+      font-size: 10px;  /* タイトルをさらに小さく */
+    }
+  
+    .card__description {
+      display: none;  /* 説明を非表示 */
+    }
+  }
+  
