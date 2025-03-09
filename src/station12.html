@@ -12,6 +12,16 @@
           <p id="result"></p>
       </div>
     </div>
+
+    <!-- station12-common.js の読み込み -->
+    <script type="text/javascript" src="./scripts/station12-common.js"></script>
+    
+    <!-- station12.js の読み込み -->
+    <script type="text/javascript" src="./scripts/station12.js"></script>
+    
+    <script type="text/javascript">
+      // getData 関数を呼び出して結果を表示
+      document.getElementById("result").innerText = getData();
+    </script>
   </body>
-  <script type="text/javascript" src="./scripts/station12-common.js"></script>
 </html>
