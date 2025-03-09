@@ -10,10 +10,14 @@ function getData() {
 }
 
 function buildFullName(data) {
+    // 氏名を「苗字 名前」形式で連結して full_name を作成
+    data.full_name = `${data.family_name} ${data.first_name}`;
+    return data;
+}
+console.log(getData());
     // Station14の問題はこちらです。想定する答えをここを書いてください。
     // 氏名がわかるようにしつつ、半角スペースで繋いでください。
     // またtest配列のそれぞれのオブジェクトに対して、full_nameのプロパティが追加されるように実装すること
-}
 
 // 出力が想定される答え
 // const test = [
